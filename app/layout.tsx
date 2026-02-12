@@ -23,18 +23,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="border-b border-zinc-200 bg-white/70 px-6 py-4 backdrop-blur dark:border-zinc-800 dark:bg-black/60">
+    <html lang="ko">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}>
+        <header className="border-b border-border bg-background/80 px-6 py-4 backdrop-blur">
           <div className="mx-auto flex w-full max-w-4xl items-center justify-between">
             <span className="text-sm font-semibold tracking-tight">
               바이브 코딩
             </span>
-            <nav className="flex items-center gap-4 text-xs text-zinc-600 dark:text-zinc-400">
-              <a href="#projects" className="hover:text-zinc-900 dark:hover:text-zinc-100">
+            <nav className="flex items-center gap-4 text-xs text-muted-foreground">
+              <a href="#projects" className="hover:text-foreground">
                 프로젝트
               </a>
-              <a href="#contact" className="hover:text-zinc-900 dark:hover:text-zinc-100">
+              <a href="#contact" className="hover:text-foreground">
                 연락하기
               </a>
             </nav>
